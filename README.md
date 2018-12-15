@@ -11,6 +11,16 @@ The most common way to convert RGBY(Yellow) to RGB is just dropping Y(Yellow) ch
 ### Our ResNet50 Structure:
 ![alt text](https://github.com/jxtang0920/DL_Project_HumanAtlasImage/blob/master/ResNet50.png)
 
+## InceptionResNetv2:
+:link:[ InceptionResNetv2_base](https://github.com/jxtang0920/DL_Project_HumanAtlasImage/blob/master/Inception_resnet_v2_base_model.ipynb)
+:link:[InceptionResNetv2_retrain](https://github.com/jxtang0920/DL_Project_HumanAtlasImage/blob/master/Inception_resnet_retrain.py)
+
+The minimum required size of Inception-ResNet-V2 is 139X139, so, in order to save the computational resources,  we set the image size to this value. 
+Keras provides the applicable version of this net, implemented in keras.applications. As the version on the SCC is out-dated, we downloaded the github version of this file.
+The base parameters we used for our training batch_size is 100. Loss function we use is binary cross-entropy,  and optimizer we choose is Adadelta. We saved the initial model to use for future retraining.
+
+### Our ResNet50 Structure:
+![alt text](https://github.com/jxtang0920/DL_Project_HumanAtlasImage/blob/master/Inception.png)
 
 ## Result:
 
